@@ -1,0 +1,107 @@
+clinical:
+  n: 52
+  recurrent_irae: 25
+  grade3plus_recurrence: 13
+icos:
+  initial_n: 35
+  gmm_low_n: 21
+  gmm_high_n: 14
+  threshold: 2.91
+  gmm_mean_low: 1.60
+  gmm_mean_high: 5.36
+  pred0_n: 40
+  pred0_events: 19
+  pred0_event_median: 2.98
+  pred0_control_median: 1.76
+  pred0_auc: 0.677
+  pred0_p: 0.0580
+  r1_n: 25
+  r1_events: 8
+  r1_event_median: 4.245
+  r1_control_median: 2.260
+  r1_auc: 0.805
+  r1_p: 0.0169
+  cox_iqr: 2.31
+  cox_hr: 1.69
+  cox_ci_low: 1.11
+  cox_ci_high: 2.59
+  cox_p: 0.015
+lag3:
+  full_n: 19
+  full_events: 6
+  full_event_median: 0.308
+  full_control_median: 0.008
+  full_p: 0.0285
+  d180_n: 18
+  d180_events: 6
+  d180_event_median: 0.579
+  d180_control_median: 0.042
+  d180_p: 0.00970
+  d180_perm_median_p: 0.00905
+treg:
+  paired_n: 17
+  paired_rho: 0.725
+  paired_treg_pre_median: 2.80
+  paired_treg_r1_median: 2.70
+  paired_icos_pre_median: 2.42
+  paired_icos_r1_median: 2.55
+  slopes_n: 18
+  slopes_rho: 0.682
+monocytes:
+  r1_n: 20
+  r1_events: 6
+  classical_event_median: 7.99
+  classical_control_median: 4.96
+  classical_auc: 0.905
+  classical_p: 0.0033
+  intermediate_event_median: 1.115
+  intermediate_control_median: 0.250
+  intermediate_auc: 0.863
+  intermediate_p: 0.0117
+  ci_event_median: 9.11
+  ci_control_median: 5.27
+  ci_auc: 0.917
+  ci_p: 0.0023
+  paired_n: 16
+  paired_events: 5
+  classical_delta_event: 2.91
+  classical_delta_control: -0.05
+  classical_delta_p: 0.0275
+  intermediate_delta_event: 0.21
+  intermediate_delta_control: 0.07
+  intermediate_delta_p: 0.0275
+  ci_delta_event: 3.07
+  ci_delta_control: 0.37
+  ci_delta_p: 0.0192
+cd95:
+  r1_n: 20
+  rheum_n: 3
+  no_toxicity_n: 14
+  rheum_median: 45.3
+  no_toxicity_median: 22.4
+  auc: 0.976
+  p: 0.00588235294117647
+  bh_q_43: 0.2529411764705882
+  count_rheum_median: 176.0
+  count_no_toxicity_median: 231.0
+  freq_cd4_rheum_median: 0.48
+  freq_cd4_no_toxicity_median: 0.61
+icos_event_pairs:
+  n: 10
+  increases: 7
+  decreases: 3
+  median_pre: 2.365
+  median_event: 4.535
+  gmr: 2.026
+  ci_low: 0.860
+  ci_high: 4.776
+  p_t: 0.0953
+  p_wilcoxon: 0.1055
+firth:
+  T-panel availability: {or: 5.33, ci_low: 1.17, ci_high: 46.45, p: 0.0165}
+  Multi-organ initial irAE: {or: 2.51, ci_low: 1.15, ci_high: 25.15, p: 0.0170}
+  Anti–IL-6R prophylaxis: {or: 4.87, ci_low: 1.14, ci_high: 42.68, p: 0.0212}
+  Initial grade ≥3: {or: 4.59, ci_low: 1.17, ci_high: 33.77, p: 0.0161}
+  Prior dual ICI: {or: 8.10, ci_low: 1.24, ci_high: 155.89, p: 0.0159}
+  Active glucocorticoids: {or: 4.71, ci_low: 1.18, ci_high: 33.46, p: 0.0160}
+  Days from D0: {or: 5.26, ci_low: 1.24, ci_high: 39.88, p: 0.0109}

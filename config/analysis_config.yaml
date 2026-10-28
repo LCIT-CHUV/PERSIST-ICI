@@ -1,0 +1,36 @@
+administrative_censor_date: '2026-01-16'
+icos:
+  marker: CD4_EM_ICOS
+  initial_timepoint: Initial irAE 1
+  r1_timepoint: Rechallenge 1
+  iqr_scale: 2.31
+  gmm_components: 2
+  gmm_n_init: 50
+  gmm_seed: 20260916
+  bootstrap_draws: 100000
+  bootstrap_seed: 20260916
+lag3:
+  marker: CD4_LAG3
+  exclude_patients: [Prophy2n-033]
+  d180_max_day: 180
+  permutation_seed: 20260915
+  bootstrap_seed: 20260917
+  bootstrap_draws: 100000
+treg:
+  icos_marker: of_nontreg_icos_mmi
+  treg_marker: of_cd4_pos_pct_treg_like
+  permutation_seed: 20261001
+  permutation_draws: 100000
+  bootstrap_draws: 10000
+  bootstrap_seed: 20261001
+monocytes:
+  r1_patients_exclude_post_event: true
+  classical_marker: Classical_mono
+  intermediate_marker: Intm_mono
+  nonclassical_marker: non_class_mono
+cd95:
+  primary_marker: of_DN_CCR7_pos_NONTREG_CD95
+  control_marker: of_DN_CCR7_neg_NONTREG_CD95
+  count_marker: ICOS_pos_NONTREG_DN_CCR7_pos_counts
+  cd4_frequency_marker: of_CD4_pos_ICOS_pos_DN_CCR7_pos_NONTREG
+  rheumatologic_event_regex: Arthritis
